@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        body{
+            font-style: sans-serif;
+        }
+        .parent{
+            width: 70%;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            gap: 2rem;
+            
+        }
+        .heading{
+            text-transform: capitalize;
+        }
+        p{
+            
+            text-align: justify;
+        }
+        .paragraph{
+            color: gray;
+        }
+        .tiitle-section{
+            width: 50%;
+        }
+        .cards{
+            padding: 2rem;
+            display: flex;
+            gap: 1rem;
+            width: 70%;
+            margin: auto;
+        }
+        .card{
+            box-shadow: 5px 5px 10px 2px gray;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: auto;
+        }
+        .image img{
+            border-radius: 50%;
+            display: flex;
+            height: 100px;
+            width: 100px;
+        }
+        
+        @media only screen and (max-width:600px) {
+            /* body{
+                background-color: red;
+            } */
+            .parent{
+                width: 90%;
+                flex-direction: column;
+                margin: auto;
+            }
+            .tiitle-section{
+                width: 100%;
+            }
+            .heading{
+                align-items: center;
+            }
+            .cards{
+                width: 90%;
+                flex-direction: column;
+                margin: auto;
+            }
+            .image img{
+            border-radius: none;
+
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="title-section">
+            <div class="heading">
+                <h1>This is A Heading</h1>
+            </div>
+            <div class="paragraph">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur unde soluta maxime suscipit accusamus, repellendus autem at. Officia eligendi laboriosam facere repellendus, possimus aliquam dolor veritatis eum quae nulla illum?</p>
+            </div>
+            <div class="button">
+                <button>Click me</button>
+                <button>Click me</button>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/879/785/desktop-wallpaper-closeup-golden-eagle-bird-1920p-eagle-eye-thumbnail.jpg" alt="">
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="image">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/879/785/desktop-wallpaper-closeup-golden-eagle-bird-1920p-eagle-eye-thumbnail.jpg" alt="">    
+            </div>
+            <div class="title">
+                <h4>This is A Title</h4>
+                <div class="card-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam autem libero beatae minus necessitatibus tenetur sed consectetur amet nisi?</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/879/785/desktop-wallpaper-closeup-golden-eagle-bird-1920p-eagle-eye-thumbnail.jpg" alt="">    
+            </div>    
+            <div class="title">
+                <h4>This is A Title</h4>
+                <div class="card-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam autem libero beatae minus necessitatibus tenetur sed consectetur amet nisi?</p>
+                </div>    
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/879/785/desktop-wallpaper-closeup-golden-eagle-bird-1920p-eagle-eye-thumbnail.jpg" alt="">    
+            </div>
+            <div class="title">
+                <h4>This is A Title</h4>
+                <div class="card-info">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam autem libero beatae minus necessitatibus tenetur sed consectetur amet nisi?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
